@@ -1,5 +1,5 @@
 .menu{
-    background-color: aqua;
+    background-color: var(--color-white);
     height: var(--height-menu);
     display: flex;
     align-items: center;
@@ -19,7 +19,7 @@
     }
 }
 .menu__nav{
-    background-color: var(--color-gray1);
+    background-color: var(--menu-nav-bg);
     position: absolute;
     right: -70%;
     top: var(--height-menu);
@@ -34,7 +34,7 @@
         display: block;
         height: auto;
         top: 0;
-        
+        background-color: transparent;
     }
     @include rwd-bp(lg){
         margin: 0 auto;
@@ -44,10 +44,11 @@
     right: 0;
 }
 .nav__ulFirst{
-    height: 500px;
+    height: auto;
     width: 100%;
-    margin: auto 0;
+    margin: 1rem 0 auto;
     list-style: none;
+    padding: 0;
     @include rwd-bp(md){
         height: auto;
         margin: 0;
@@ -59,7 +60,7 @@
     text-decoration: none;
     color: var(--color-white);
     display: block;
-    padding: .5rem 1rem;
+    padding: var(--menu-padding-a);
     &:hover{
         color: var(--color-black);
         background-color: var(--color-gray);
@@ -68,40 +69,42 @@
     @include rwd-bp(md){
         line-height:var(--height-menu) ;
         padding: 0 1rem;
+        color: var(--header-nav-a);
+        &:hover{
+            background-color: transparent;
+        }
     }
 }
-// .nav-subBlock{
-//     @include rwd-bp(md){
-//         position: relative;
-//     }
-// }
 .nav__ulSecont{
-    // display: flex;
-    // flex-flow: column nowrap;
-    // align-items: center;
     overflow: hidden;
-    height: 0;
-    transition: all .5s ease-in-out;
+    max-height: 0;
+    transition: max-height .5s ease-in-out;
     @include rwd-bp(md){
         padding: 0;
         position: absolute;
         top: var(--height-menu);
-        background-color: brown;
+        background-color:var(--color-white);        
         border-radius: 1rem;
+        box-shadow: var(--box-shadown);
         & .nav__a{
-            padding: .5rem 1rem;
+            // color: #797b86;
+            padding: .7rem 2.5rem;
             line-height: 1.5;
             width: 100%;
             display: block;
+            &:hover{
+                background-color: var(--header-nav-hover-a);
+            }
         }
     }
 }
 .nav__ulSecont--show{
     overflow: hidden;
-    height: 250px;
+    max-height: 500px;
     @include rwd-bp(md){
-        padding: .4rem 0;
-        height: 260px;
-        align-items: center;
+        // TODO: el padding genera un movimiento feo al momento de cerar
+        padding: 1.5rem 0;
+        // max-height: 260px;
+        // align-items: center;
     }
 }
