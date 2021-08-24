@@ -1,0 +1,23 @@
+// var menu
+:root{
+    --height-menu:5rem;
+}
+
+// var color
+:root{
+    --color-white:white;
+    --color-black:black;
+    --color-gray1:#2d323d;
+    --color-gray:#828282;
+    --color-bg-primary:red;
+    --color-bg-primary-degradado:rgba(165, 42, 42, 0.938);
+    --color-bg-secundary:rgba(0, 0, 0, 0.7);
+}
+$breakpoints:(
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+)

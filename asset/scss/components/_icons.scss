@@ -1,0 +1,12 @@
+.menu__icon{
+    font-size: 1.8rem;
+    cursor: pointer;
+    @include rwd-bp(md){
+        display: none;
+    }
+}
+.nav__icon--down{
+    @include rwd-bp(md){
+        display: none;
+    }
+}
