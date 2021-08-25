@@ -81,6 +81,7 @@
     transition: max-height .5s ease-in-out;
     @include rwd-bp(md){
         padding: 0;
+        // padding: 1.5rem 0;
         position: absolute;
         top: var(--height-menu);
         background-color:var(--color-white);        
@@ -104,7 +105,5 @@
     @include rwd-bp(md){
         // TODO: el padding genera un movimiento feo al momento de cerar
         padding: 1.5rem 0;
-        // max-height: 260px;
-        // align-items: center;
     }
 }
