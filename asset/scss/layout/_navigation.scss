@@ -1,10 +1,14 @@
 .menu{
-    background-color: var(--color-white);
+    z-index: var(--z-modal);
     height: var(--height-menu);
     display: flex;
     align-items: center;
-    position: sticky;
+    position: absolute;
     top: 0;
+    transition: all .5s;
+}
+.menu--bg-color-show{
+    background-color: var(--color-white);
 }
 .menu__content{
     display: flex;
@@ -21,15 +25,17 @@
 .menu__nav{
     background-color: var(--menu-nav-bg);
     position: absolute;
-    right: -70%;
+    right: 0;
     top: var(--height-menu);
     height: calc(100vh - var(--height-menu));
-    width: 70%;
+    width: 0;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     transition: all .5s ease;
     @include rwd-bp(md){
-        position:static;
+        position:relative;
+        overflow: visible;
         width: auto;
         display: block;
         height: auto;
@@ -41,7 +47,7 @@
     }
 }
 .menu__nav--show{
-    right: 0;
+    width: 70%;
 }
 .nav__ulFirst{
     height: auto;
@@ -81,14 +87,14 @@
     transition: max-height .5s ease-in-out;
     @include rwd-bp(md){
         padding: 0;
-        // padding: 1.5rem 0;
+        transition: all .5s ease-out;
         position: absolute;
+        min-width: 232px;
         top: var(--height-menu);
         background-color:var(--color-white);        
-        border-radius: 1rem;
+        border-radius: .5rem;
         box-shadow: var(--box-shadown);
         & .nav__a{
-            // color: #797b86;
             padding: .7rem 2.5rem;
             line-height: 1.5;
             width: 100%;
@@ -103,7 +109,6 @@
     overflow: hidden;
     max-height: 500px;
     @include rwd-bp(md){
-        // TODO: el padding genera un movimiento feo al momento de cerar
         padding: 1.5rem 0;
     }
 }

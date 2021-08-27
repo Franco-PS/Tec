@@ -8,6 +8,7 @@
 //     let barra2= document.getElementById('nav__ulSecont')
 //     barra2.classList.toggle('nav__ulSecont--show')
 // })
+const menuBar= document.getElementById('menu')
 
 let button= document.getElementById('menu__content');
 button.addEventListener('click',e=>{
@@ -18,6 +19,7 @@ button.addEventListener('click',e=>{
         menuSubNav= document.getElementById('nav__ulSecont');
     if(t== menuBarras){
         menuNav.classList.toggle('menu__nav--show')
+        menuBar.classList.toggle('menu--bg-color-show')
     }else if(t== navLink){
         menuSubNav.classList.toggle('nav__ulSecont--show')
     }

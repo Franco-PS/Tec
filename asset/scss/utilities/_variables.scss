@@ -14,7 +14,7 @@
     --color-bg-primary:red;
     --color-bg-primary-degradado:rgba(165, 42, 42, 0.938);
     --menu-nav-bg:rgba(0, 0, 0, 0.7);
-    --header-nav-a:#a5a1a1;
+    --header-nav-a:#474646;
     --header-nav-hover-a:hsla(0, 2%, 64%, 0.843);
 }
 $breakpoints:(
@@ -45,3 +45,11 @@ $breakpoints:(
       --small-font-size: 1rem;
     }
   }
+//variables de anidamiento
+:root {
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 10000;
+}

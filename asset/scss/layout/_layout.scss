@@ -1,0 +1,34 @@
+.container-y{
+    --padding-top:2rem;
+    --padding-botton:2rem;
+
+    padding-top: var(--padding-top);
+    padding-bottom: var(--padding-botton);
+    @include rwd-bp(md){
+        --padding-top:3.13rem;
+        --padding-botton:3.13rem;
+    }
+}
+
+// barras
+.skill__box-click{
+    padding: 1rem 1rem;
+}
+.skill__content{
+    padding: 0 1rem;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.bar100{
+    background-color: var(--color-gray);
+    width: 100%;
+    height: 1em;
+    border-radius: .5em;
+    position: relative;
+    top: -1rem;
+    
+}

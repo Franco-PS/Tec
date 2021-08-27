@@ -1,6 +1,14 @@
 @import 'utilities/mixin';
 @import 'utilities/variables';
-@import 'base';
+@import 'utilities/base';
 @import 'components/icons';
 
 @import 'layout/_navigation';
+@import 'components/banner';
+@import 'layout/layout';
+@import 'components/button';
+@import 'components/carousel';
+
+@import 'views/home';
+
+@import 'layout/footer';
