@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Ubuntu:ital,wght@0,500;1,300&display=swap');
-
+#body-position{
+    position:relative;
+    z-index: var(--z-normal);
+}
 .menu{
     font-family: 'Open Sans', sans-serif;
     font-size: var(--menu-font-size);
     font-weight:500;
 }
 
-main{
+body main{
     font-family: 'Open Sans', sans-serif;
     color: var(--color-gray);
     font-size: var(--body-font-size);
     z-index:var(--z-normal) ;
-    background-color: var(--white);
+    background-color: var(--color-white);
+    // position: relative;
 }
 
 body .header-text{

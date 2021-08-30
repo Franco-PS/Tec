@@ -1,0 +1,40 @@
+.footer{
+    --padding-foother:2rem;
+    --margin-hr:1.5rem;
+    @include rwd-bp(md){
+        --padding-foother:4rem;
+        --margin-hr:2.8rem;
+    }
+
+    background-color: var(--color-gray1);
+    z-index: var(--z-back);
+    position: sticky;
+    padding-top: var(--padding-foother);
+    bottom: 0;
+    
+    font-family: 'Open Sans', sans-serif;
+    color: var(--color-gray);
+    font-size: var(--small-font-size);
+}
+.footer .h5{
+    color: white;
+}
+.footer__ul{
+    padding: 0;
+}
+.footer__link{
+    text-decoration: none;
+    color: var(--color-gray);
+}
+.footer li{
+    list-style: none;
+    text-decoration: none;
+}
+.footer__hr{
+    border: 2px solid var(--color-gray);
+    margin: var(--margin-hr) 0 0;
+}
+.foother__textEnd{
+    margin: 0;
+    padding: .5rem 0;
+}
