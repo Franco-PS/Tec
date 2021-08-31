@@ -311,6 +311,7 @@ main .btn {
       --margin-hr:2.8rem; } }
 
 .footer .h5 {
+  font-family: 'Ubuntu', sans-serif;
   color: white; }
 
 .footer__ul {
