@@ -3,12 +3,13 @@
     height: var(--height-menu);
     display: flex;
     align-items: center;
-    position: absolute;
+    position:fixed;
     top: 0;
     transition: all .5s;
 }
 .menu--bg-color-show{
     background-color: var(--color-white);
+    box-shadow: var(--box-shadownBarNav);
 }
 .menu__content{
     display: flex;
@@ -112,3 +113,4 @@
         padding: 1.5rem 0;
     }
 }
+

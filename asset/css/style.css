@@ -2,7 +2,8 @@
 :root {
   --height-menu: 4.8rem;
   --menu-padding-a: 0.3rem 2rem;
-  --box-shadown: 0 16px 50px var(--menu-nav-bg); }
+  --box-shadown: 0 16px 50px var(--menu-nav-bg);
+  --box-shadownBarNav: 0 .5px 10px var(--color-gray1); }
 
 :root {
   --color-white:white;
@@ -89,12 +90,13 @@ body .header-text {
   height: var(--height-menu);
   display: flex;
   align-items: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   transition: all .5s; }
 
 .menu--bg-color-show {
-  background-color: var(--color-white); }
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadownBarNav); }
 
 .menu__content {
   display: flex;
