@@ -50,6 +50,22 @@
 .menu__nav--show{
     width: 70%;
 }
+.drawer{
+    background-color: transparent;
+    display: none;
+    position: absolute;
+    // width:30%;
+    height: calc(100vh - var(--height-menu));
+    top: var(--height-menu);
+    
+}
+.drawer--show{
+    // transition: all 15s ease;
+    width:100%;
+    right: 0;
+    // left: 0;
+    display: block;
+}
 .nav__ulFirst{
     height: auto;
     width: 100%;
@@ -83,6 +99,7 @@
     }
 }
 .nav__ulSecont{
+    padding-left: 0;
     overflow: hidden;
     max-height: 0;
     transition: max-height .5s ease-in-out;
@@ -106,11 +123,13 @@
         }
     }
 }
-.nav__ulSecont--show{
+.nav__li:hover .nav__ulSecont{
     overflow: hidden;
     max-height: 500px;
+    padding: 1.5rem 0;
     @include rwd-bp(md){
         padding: 1.5rem 0;
-    }
+    } 
 }
+
 
